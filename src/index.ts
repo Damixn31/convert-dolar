@@ -7,6 +7,8 @@ const inputCurrency: HTMLSelectElement = <HTMLSelectElement>(
 
 const expenses = new Expenses("USD");
 
+render();
+
 bAdd!.addEventListener("click", e => {
   if (
     inputTitle!.value != "" &&

@@ -91,7 +91,7 @@ class Expenses implements IExpenses {
       case "USD":
         switch (currency) {
           case "ARS":
-            return item.cost.number * 132;
+            return item.cost.number * 132.65;
             break;
 
           default:
@@ -102,7 +102,7 @@ class Expenses implements IExpenses {
       case "ARS":
         switch (currency) {
           case "USD":
-            return item.cost.number / 132;
+            return item.cost.number / 132.65;
             break;
 
           default:
